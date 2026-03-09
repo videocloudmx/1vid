@@ -3,69 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Video con Anuncio</title>
+    <title></title>
+    
+    <script>(function(s){s.dataset.zone='10273232',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    
+    <script>(function(s){s.dataset.zone='10273223',s.src='https://groleegni.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
     <style>
         body {
-            font-family: sans-serif;
-            background-color: #1a1a1a;
+            background-color: #121212;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px; /* Espacio para que no toque los bordes en móviles */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
         }
 
         .video-container {
-            width: 90%;
-            max-width: 800px;
-            background: #000;
-            border-radius: 8px;
+            width: 100%;
+            max-width: 800px; /* Límite máximo para que no se vea gigante en PC */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            background: #000;
         }
 
         video {
             width: 100%;
+            height: auto; /* Esto hace que la altura se ajuste al video original */
             display: block;
-        }
-
-        .info {
-            color: #fff;
-            padding: 15px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
 
+    <h1>Video 🎬</h1>
+
     <div class="video-container">
-        <video controls poster="https://via.placeholder.com/800x450?text=Cargando+Video...">
-            <source src="https://qu.ax/ZaMJX.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos en HTML5.
+        <video controls poster="https://via.placeholder.com/800x450/000000/FFFFFF?text=Cargando+Video...">
+            <source src="https://qu.ax/KoFNx.mp4" type="video/mp4">
+            Haz click en LEER MÁS para ver el video.
         </video>
-        
-        <div class="info">
-            <h3>Reproductor de Video</h3>
-        </div>
     </div>
 
-    <div style="position: absolute; z-index: 99999">
-        <input autocomplete="off" type="checkbox" id="aadsstickymm6i8vgm" hidden />
-        <div style="padding-top: 0; padding-bottom: auto;">
-          <div style="width:100%;height:auto;position:fixed;text-align:center;font-size:0;bottom:0;left:0;right:0;margin:auto">
-            <label for="aadsstickymm6i8vgm" style="top: 50%;transform: translateY(-50%);right:24px;; position: absolute;border-radius: 4px; background: rgba(248, 248, 249, 0.70); padding: 4px;z-index: 99999;cursor:pointer">
-              <svg fill="#000000" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490">
-                <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "/>
-              </svg>
-            </label>
-            <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;"><iframe data-aa=2429033 src=//acceptable.a-ads.com/2429033/?size=Adaptive style='border:0; padding:0; width:70%; height:auto; overflow:hidden; margin: auto'></iframe></div>
-          </div>
-          <style>
-        #aadsstickymm6i8vgm:checked + div {
-          display: none;
-        }
-      </style>
-      </div></div>
-    </body>
+</body>
 </html>
